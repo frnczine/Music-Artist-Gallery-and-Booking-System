@@ -1,0 +1,15 @@
+
+.footer {
+  position: fixed;       /*Makes it stay visible*/
+  bottom: 0;             /*to make it stick to the bottom*/
+  left: 0;
+  width: 100%;          
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;         
+  background-color: rgba(33, 6, 53, 0.85);  /*same color as the navbar, don't change*/
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 100;          
+  border-top: 1px solid #333; /*separation line*/
+}

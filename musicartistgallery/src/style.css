@@ -1,0 +1,1150 @@
+/*Below are the Navbar.css (its design, color choice)*/
+.custom-navbar {
+  background: rgba(33, 6, 53, 0.85); 
+  padding: 1rem 2rem;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b1e0e6 !important; 
+  letter-spacing: 2px;
+}
+.navbar-nav .nav-link {
+  color: #F5D5E0 !important;
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #cd6cd2 !important; 
+}
+.navbar-toggler {
+  border-color: #F5D5E0;
+}
+.navbar-toggler-icon {
+  width: 1.5em;
+  height: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(245,213,224, 0.95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+body { /*Our Palette, gradient, consistency of colors are based here*/
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 35px;
+  background: linear-gradient(135deg, #5ca3c6, #7a337e, #420d4d);
+  background-attachment: fixed;
+  color: #F5D5E0;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+}
+/*Search & User Icon*/
+.searchbar {
+  border: 1px solid #fff;
+  background: transparent !important; /*To avoid override and force transparent design*/
+  color: #fff !important;
+  border-radius: 50px !important;
+}
+.searchbar::placeholder {
+  color: #ddd !important; /*to show search*/
+}
+.searchicon {
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.searchicon:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.usericon {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clear-search-btn { /*pop up clear button after typing on searchbar*/
+  position: absolute;
+  right: 3rem; 
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6); 
+  font-size: 0.9rem;
+  padding: 0;
+  cursor: pointer;
+}
+.clear-search-btn:hover { /*to properly show when the user is about to delete*/
+  color: white; 
+}
+.usericon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  /*BUTTON DESIGN (for consistency of the shape and color and even when hovered*/
+} .btn-explore, .btn-HomeSignup, .btn-signup, .btn-login, .btn-signup, .btn-loginArtist, .btn-loginAdmin,.btn-ContactSend, .btn-ContactAdminSend, .save-btn, .reset-btn{ 
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #f5d5e0;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #f5d5e0, 0 0 20px #7a337e;
+}.btn-explore:hover ,.btn-HomeSignup:hover, .btn-signup:hover, .btn-login:hover, .btn-signup:hover, .btn-loginArtist:hover, .btn-loginAdmin:hover, 
+.btn-ContactSend:hover,.btn-ContactAdminSend:hover, .save-btn:hover, .reset-btn:hover, .btn-light:hover{
+  background: #f5d5e0;
+  color: #420D4B;
+  box-shadow: 0 0 20px #f5d5e0, 0 0 40px #7a337e;
+}
+.exAndSuButton{ /*Home, LandingPage, & AdminHome button*/
+  display:flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+/*for grid*/
+.groupIntro{
+  display:flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 10%;
+  color:#fff
+
+}
+.introText h1 { /*Text Design, especially for title*/
+  font-size: 5rem;
+  font-weight: 900;
+  color: #f5d5e0;
+  text-shadow: 0 0 10px #f5d5e0, 0 0 20px #7a337e, 0 0 40px #420D4B;
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
+p { /*to make it visible on our palette, it is white*/
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+  max-width: 600px;
+  color: #eee;
+} /*Logo size & display part*/
+.homeLogo img{
+  height: auto;
+  display:block;
+  margin: 0 auto;
+}
+.logo{
+  width: 450px;
+}
+.Aboutlogo{
+  width: 350px;
+}
+.section-box {
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;   
+  align-items: flex-start;   
+  padding-top: 8rem;  
+  color: #eee !important;    
+  font-family: 'Poppins';
+}
+.box{ /*Box for Login*/
+  background: rgba(255, 255, 255, 0.1);  
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #7B337E, 0 0 50px #420D4B;
+  text-align: center; 
+  align-items: center;
+  color: #fff;
+  height: 400px;
+  width: 550px;
+}.boxSignup{ /*Box for Sign-up, different in size (height, width)*/
+  background: rgba(255, 255, 255, 0.1);  
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #7B337E, 0 0 50px #420D4B;
+  text-align: center; 
+  align-items: center;
+  color: #fff;
+  height: 650px;
+  width: 550px;
+}.boxContact{ /*Client & Artists' box for Contact.jsx*/
+  background: rgba(255, 255, 255, 0.1);  
+  padding:2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #7B337E, 0 0 50px #420D4B;
+  color: #fff;
+  width:100%;
+  height:auto;
+  text-align: left;
+}
+.boxContact-icon{
+  font-size: 2rem;
+  margin-right: 8px;
+  vertical-align: middle;
+  padding: 0 10px;
+  display: flex;
+  gap: 10px;
+}
+.btn-ContactSend, .btn-ContactAdminSend{ /*Button size, but same style as the others from home*/
+  width: 200px;
+}
+.box-AdminLog{ /*Admin Box - for login*/
+  background: rgba(255, 255, 255, 0.1);  
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #7B337E, 0 0 50px #420D4B;
+  text-align: center; 
+  align-items: center;
+  color: #fff;
+  height: 300px;
+  width: 550px;
+}
+/*Section headers*/
+h2, h3 { /*to apply on different text sizes*/
+  font-weight: bold !important;
+  color: white !important;
+  font-family: sans-serif !important;
+  margin-bottom: 20px;
+}
+.pending-titles {
+  font-size: 3rem;
+  color:white;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: #f5d5e0;
+  text-shadow: 0 0 10px #f5d5e0, 0 0 20px #7a337e, 0 0 40px #420D4B;
+  max-width: 600px !important;
+  padding:15px;
+}
+/*Featured Artists Carousel*/
+.carousel-inner img {
+  border-radius: 15px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(1); /*make arrows white*/
+}
+
+/*For You Section*/
+.card {
+  background: #3a0d58; /*purple card*/
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/*Text inside cards*/
+.card h5 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  color: #e0e0e0;
+}
+
+/*"More" button*/
+.btn-light {
+  background: white;
+  color: #5d3fd3;
+  border: none;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+/*Library Page*/
+.library-page {
+  background: linear-gradient(135deg, #5ca3c6, #7a337e, #420d4d);
+  min-height: 100vh;
+  padding: 40px;
+  color: white;
+}
+
+.library-section h4 {
+  margin-bottom: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/*Scrollable Library boxes*/
+.library-box {
+  background: #3a0d58;
+  border-radius: 30px;
+  min-height: 500px;   /*changed for previously background lang (220px before)*/
+  max-height:400px;   /*fixed height*/
+  overflow-y: auto;    /*scroll when full*/
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  padding: 15px;
+}
+
+/*Scrollbar style*/
+.library-box::-webkit-scrollbar {
+  width: 8px;
+}
+.library-box::-webkit-scrollbar-track {
+  background: #2a073f;
+  border-radius: 10px;
+}
+.library-box::-webkit-scrollbar-thumb {
+  background: #8a2be2;
+  border-radius: 10px;
+}
+.library-box::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
+/*Cards inside library*/
+.library-box .card {
+  background: #3a0d58;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  height: 100%;
+}
+.library-box .card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.library-box .card h5 {
+  color: white;
+}
+.library-box .card p {
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+/*"More" buttons*/
+.btn-light {
+  background: white;
+  color: #5d3fd3;
+  border: none;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.btn-light:hover { 
+  background: #e0e0e0;
+  color: #4b006e;
+}
+
+/*ABOUT US & WHAT WE DO (Client About Page)*/
+.about-section {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.about-image img {
+  border-radius: 15px;
+  max-width: 80%;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d3d3d3; /*Readability & for Consistency of our page*/
+  text-align:justify;
+}
+
+.section-title, .section-subtitle {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.feature-box {
+  background: rgba(63, 0, 94, 0.7);
+  color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-box h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/*Section Title Class*/
+.section-title {
+  text-align: left;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.btn-custom:hover {
+  background-color: #5a0e85;
+  color: #fff;
+  box-shadow: 3px 3px 0 #000;
+}
+
+/*ADMIN PENDING BOOKINGS*/
+/*Scrollable list for bookings*/
+.pending-list {
+  flex: 1;
+  max-height: 70vh;    
+  overflow-y: auto;   
+  overflow-x: hidden;    
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.pending-list::-webkit-scrollbar {
+  width: 10px;
+}
+.pending-list::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+.pending-list::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/*Approve Button*/
+.btn-approve {
+  background-color: #fff ;
+  border: 2px solid #5a0e85 ;
+  color: #f3f1f5 !important;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 0 #11004e;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+.btn-approve:hover {
+  background-color: #06e463d7 !important;
+  color: #fff;
+  box-shadow: 3px 3px 0 #5a0e85;
+}
+
+/*Decline Button*/
+.btn-decline, .btn-declineBookings {
+  background-color: #fff;
+  border: 2px solid #a50000;
+  color: #a50000 !important;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 0 #000;
+  transition: all 0.2s ease;
+}
+.btn-decline:hover, .btn-declineBookings:hover {
+  background-color: #a50000;
+  color: #f3f3f3;
+  box-shadow: 3px 3px 0 #000;
+}
+
+/*Scrollable list for bookings & artists*/
+.pending-list {
+  flex: 1;
+  max-height: 70vh;
+  overflow-y: auto;       
+  overflow-x: hidden;   
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.pending-list::-webkit-scrollbar {
+  width: 10px;
+}
+.pending-list::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+.pending-list::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+
+/*ADMIN Pending Artists Verify button*/
+.btn-verify {
+  background-color: #fff;
+  border: 2px solid #5a0e85;
+  color: #ffffff !important;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 0 #11004e;
+  transition: all 0.2s ease;
+  text-transform: uppercase
+}
+
+.btn-verify:hover {
+  background-color: #007bff !important;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+.verified-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.verify-btn.pending {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+.verify-btn.declined {
+  background-color: #d9534f;
+  color: white;
+}
+
+
+/*ARTISTS PENDING BOOKINGS*/
+/*Booking Card*/
+.booking-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+/*Profile image*/
+.booking-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+/*Client Info*/
+.client-info {
+  flex: 1;
+  min-width: 180px;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.booking-actions button {
+  background: white;
+  color: #5a0b63; 
+  font-weight: bold;
+  border: none;
+  padding: 9px 19px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.booking-actions button:hover {
+  transform: translateY(-2px);
+}
+
+.accept-btn {
+  color: #5a0b63;
+}
+
+.decline-btn {
+  color: #5a0b63;
+}
+
+/*Accept Button*/
+.btn-accept {
+  background: white;
+  border: 2px solid #5a0e85;
+  color: #5a0e85 !important;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 0 #11004e;
+  transition: all 0.2s ease;
+  text-transform: uppercase
+}
+
+.btn-accept:hover {
+   background-color: #007bff !important;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+/*Decline Button*/
+.btn-decline {
+  background: white;
+  color: #5c0a61;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 25px;
+  box-shadow: 0 4px 0px #000;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-decline:hover {
+  background: #dc3545; /*red hover to signify decline*/
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0px #921d28;
+}
+
+.verified-badge {
+  width: 32px;
+  height: 32px;
+  background: #1DA1F2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.verified-badge::before {
+  content: "✔";
+  font-family: Arial, sans-serif;
+}
+
+/*MODAL COMPONENT STYLE*/
+/* Modal Overlay (background layer) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/*Modal container*/
+.custom-modal-box {
+  background: linear-gradient(180deg, rgba(50, 0, 90, 0.95), rgba(30, 0, 60, 0.95));
+  padding: 2rem;
+  border-radius: 25px;
+  width: 500px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/*Fade-in animation for modal*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*Artist image*/
+.artist-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*Song list styling*/
+.song-list .list-group-item {
+  color: #f1f1f1;
+  font-size: 0.95rem;
+}
+
+.song-list .list-group-item .btn {
+  background: #ff4d4d;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.song-list .list-group-item .btn:hover {
+  transform: scale(1.1);
+}
+
+/*Booking section*/
+.booking-form h6 {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.booking-date-input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.booking-date-input:focus {
+  border: 1px solid #9c27b0;
+  box-shadow: 0 0 5px rgba(156, 39, 176, 0.5);
+}
+
+.booking-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  color: #ddd;
+  font-weight: 500;
+}
+
+/*Confirm / Cancel Buttons*/
+.btn-success,
+.btn-outline-light {
+  border-radius: 25px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:hover {
+  background: #4caf50;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light:hover {
+  background: #fff;
+  color: #333;
+  transform: translateY(-2px);
+}
+
+/*Responsiveness media*/
+@media (max-width: 768px) {
+  .custom-modal-box {
+    width: 90%;
+    padding: 1.8rem;
+  }
+
+  .artist-image {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-modal-box {
+    width: 95%;
+    padding: 1.2rem;
+    border-radius: 20px;
+  }
+  h4.fw-bold {
+    font-size: 1.3rem;
+  }
+  .song-list .list-group-item {
+    font-size: 0.9rem;
+  }
+  .booking-date-input {
+    font-size: 0.95rem;
+    padding: 0.55rem;
+  }
+  .booking-form label {
+    font-size: 0.9rem;
+  }
+  .btn-success, .btn-outline-light {
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .d-flex.flex-sm-row {
+    flex-direction: column;
+  }
+  .artist-image {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/*ARTISTS SIDE PROFILE STYLES*/
+/*Container*/
+.profile-container {
+  padding: 40px;
+  color: #e2e2e2;
+  min-height: 100vh;
+  overflow-y: auto; /*Scroll function for smaller screens */
+  box-sizing: border-box;
+}
+.profile-title {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+  color: #f5d5e0;
+  text-shadow: 0 0 10px #f5d5e0, 0 0 20px #7a337e, 0 0 40px #420D4B;
+  max-width: 200px;
+}
+
+/*Layout*/
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.profile-left {
+  flex: 1;
+  max-width: 45%;
+  min-width: 300px;
+}
+
+.profile-pic {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #dcd6d6;
+  display: block;
+  margin: 0 auto;
+}
+
+.verify-btn {
+  display: block;
+  margin: 15px auto 30px auto;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  color: #4a0d66;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 4px #4a0d66;
+  transition: 0.3s ease;
+}
+
+.verify-btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  box-shadow: 3px 3px 0 #000;
+}
+
+/*Form Inputs on Profile (Artist side)*/
+.profile-form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+}
+
+.profile-form input, .profile-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+textarea {
+  resize: vertical;
+}
+
+/*Social Media Links*/
+.social-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.social-input {
+  flex: 1;
+  padding: 6px;
+}
+
+.add-social-btn {
+  margin-top: 10px;
+  padding: 5px 12px;
+  background: #4a0d66;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.add-social-btn:hover {
+  background: #7a337e;
+}
+
+.delete-social-btn {
+  color: #ff4d4d;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 6px;
+  font-size: 18px;
+}
+
+.delete-social-btn:hover {
+  color: #cc0000;
+}
+
+/*Booking Status Container*/
+.booking-status {
+  margin-top: 20px;
+}
+
+.booking-status p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/*Group Container*/
+.toggle-group {
+  display: flex;
+  flex-direction: column; /*Stack vertically (responsiveness for mobile also)*/
+  gap: 10px;
+}
+
+/*clickable radio*/
+.toggle-group input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toggle-group label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 2px solid #7a337e;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #e2e2e2;
+  background: rgba(74, 13, 102, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+.toggle-group label:hover {
+  background: rgba(74, 13, 102, 0.5);
+}
+.toggle-group input[type="radio"]:checked + label {
+  background: #7a337e;
+  border-color: #f5d5e0;
+  color: #fff;
+  box-shadow: 0 0 10px #f5d5e0;
+  transform: scale(1.02);
+}
+
+/*Responsiveness in terms of horizontal on larger screens*/
+@media (min-width: 768px) {
+  .toggle-group {
+    flex-direction: row;
+  }
+
+  .toggle-group label {
+    flex: 1;
+    text-align: center;
+  }
+}
+/*Right Side*/
+.profile-right {
+  flex: 1;
+  max-width: 45%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.media-box {
+  width: 100%;
+  height: 320px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+.media-box p {
+  color: #000;
+}
+/*Action Buttons*/
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.save-btn, .reset-btn { /*Artist Side - Profile, effects for each button*/
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #e9ddf0;
+  color: #4a0d66;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.save-btn:hover {
+  background: #4a0d66;
+  color: #fff;
+}
+.reset-btn:hover {
+  background: #b82020;
+  color: #fff;
+}
+p, li {
+  color: #ffffff;
+}
+.bookings h5{
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-left,
+  .profile-right {
+    max-width: 100%;
+  }
+
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-title {
+    font-size: 2.5rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .toggle-group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-title {
+    font-size: 2rem;
+  }
+
+  .media-box {
+    height: 250px;
+  }
+}
+
+/*Landing Page, Home, for Tablet, Ipad responsiveness*/
+@media (max-width: 768px) {
+  .groupIntro {
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .introText h1 {
+    font-size: 3rem;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .exAndSuButton {
+    justify-content: center;
+  }
+}
+/*Landing Page, Home, for IPHONE SE responsiveness*/
+@media (max-width: 375px) {
+  .introText h1 {
+    font-size: 2.3rem;
+  }
+  .introText p {
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 220px;
+  }
+  .exAndSuButton {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
